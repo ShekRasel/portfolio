@@ -10,9 +10,12 @@ function Hero() {
             I'M <span className='text-yellow-400 text-3xl md:text-5xl lg:text-6xl'>Shek Rasel</span> <br />
             Javascript Developer
           </h3>
-          <button className="bg-yellow-400 text-black font-semibold px-3 py-1 md:px-6 md:py-2 lg:px-8 lg:py-3 rounded-md hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:ring-offset-2">
+          <a href="#contact">
+            <button  className="bg-yellow-400 text-black font-semibold px-3 py-1 md:px-6 md:py-2 lg:px-8 lg:py-3 rounded-sm hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:ring-offset-2">
             Contact Me
-          </button>
+            </button>
+          </a>
+          
         </div>
 
         {/* Right Section (Profile Picture) */}

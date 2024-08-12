@@ -3,9 +3,35 @@ import { BiSearch, BiMenu, BiX } from 'react-icons/bi';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value.toLowerCase());
+  };
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    navigateToSection(searchTerm);
+    setSearchTerm('');
+  };
+
+  const handleSearchIconClick = () => {
+    navigateToSection(searchTerm);
+    setSearchTerm('');
+  };
+
+  const navigateToSection = (term) => {
+    if (term === 'about' || term === 'abo') {
+      window.location.href = '#about';
+    } else if (term === 'portfolio' || term === 'port') {
+      window.location.href = '#portfolio';
+    } else if (term === 'contact' || term === 'cont') {
+      window.location.href = '#contact';
+    }
   };
 
   return (
@@ -18,21 +44,25 @@ function Navbar() {
 
         {/* Desktop Navigation Links */}
         <div className="hidden md:flex space-x-8 font-semibold">
-         <a href="#home" className="hover:text-yellow-400">Home</a>
+          <a href="#home" className="hover:text-yellow-400">Home</a>
           <a href="#about" className="hover:text-yellow-400">About</a>
           <a href="#portfolio" className="hover:text-yellow-400">Portfolio</a>
           <a href="#contact" className="hover:text-yellow-400">Contact</a>
         </div>
 
         {/* Search Input with Icon */}
-        <div className="flex items-center border border-gray-400 rounded-full px-3 py-1">
-          <BiSearch className="text-white" />
+        <form onSubmit={handleSearchSubmit} className="flex items-center border border-gray-400 rounded-full px-3 py-1">
+          <button type="button" onClick={handleSearchIconClick}>
+            <BiSearch className="text-white" />
+          </button>
           <input 
             type="text" 
             placeholder="Search..." 
             className="ml-2 outline-none bg-transparent text-white placeholder-gray-300 mb-1"
+            value={searchTerm}
+            onChange={handleSearchChange}
           />
-        </div>
+        </form>
 
         {/* Hamburger Menu Icon for Mobile */}
         <div className="md:hidden flex items-center ml-4">

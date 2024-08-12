@@ -1,12 +1,15 @@
 import React from 'react';
+import { FaHtml5, FaCss3Alt, FaReact } from 'react-icons/fa';
+import { TbBrandJavascript } from "react-icons/tb";
+import { SiMongodb, SiMysql } from 'react-icons/si';
 
 const skills = [
-  { name: 'HTML', logo: 'html.png' },
-  { name: 'CSS', logo: 'css.webp' },
-  { name: 'JavaScript', logo: 'javascript.jpg' },
-  { name: 'MongoDB', logo: 'mongo.png' },
-  { name: 'React', logo: 'react.png' },
-  { name: 'SQL', logo: 'mysql.png' },
+  { name: 'HTML', icon: <FaHtml5 /> },
+  { name: 'CSS', icon: <FaCss3Alt /> },
+  { name: 'JavaScript', icon: <TbBrandJavascript /> },
+  { name: 'MongoDB', icon: <SiMongodb /> },
+  { name: 'React', icon: <FaReact /> },
+  { name: 'SQL', icon: <SiMysql /> },
 ];
 
 function Skills() {
@@ -17,12 +20,10 @@ function Skills() {
           key={index}
           className="bg-black text-white p-6 lg:p-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 flex flex-col items-center justify-center"
         >
-          <img
-            src={skill.logo}
-            alt={`${skill.name} logo`}
-            className=" w-24 lg:w-28  h-14 lg:h-20 mb-4 lg:p-4"
-          />
-          <h3 className="text-center text-yellow-400 text-xl font-semibold">
+          <div className="text-red-500 text-5xl lg:text-6xl mb-4">
+            {skill.icon}
+          </div>
+          <h3 className="text-center text-yellow-300 text-xl font-semibold">
             {skill.name}
           </h3>
         </div>

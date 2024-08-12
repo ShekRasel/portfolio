@@ -1,5 +1,6 @@
 import React from 'react';
 import Skills from './Skills';
+import { FaArrowRightFromBracket } from "react-icons/fa6";
 
 function About() {
   return (
@@ -14,6 +15,13 @@ function About() {
         <p className="text-sm font-semibold sm:text-sm md:text-xl md:italic leading-relaxed text-justify lg:px-6 lg:font-sans">
           Hi, I'm Shek Rasel, a dedicated web developer with a passion for crafting dynamic and user-centric websites. I specialize in both frontend and backend technologies, leveraging modern frameworks to build seamless digital experiences. With a keen eye for detail and a commitment to quality, I strive to create innovative solutions that exceed expectations. My experience includes working on diverse projects, from small-scale applications to comprehensive systems. I'm constantly learning and adapting to industry trends, ensuring that my skills remain cutting-edge. Outside of development, I enjoy problem-solving and collaborating with others to bring creative ideas to life.
         </p>
+       <div className='flex gap-8 items-center'>
+        <span className='flex py-4 md:py-12 md:text-4xl items-center gap-2 md:gap-6'>
+          <h1 className=' font-semibold  text-white font-serif'>My Resume</h1>
+          <FaArrowRightFromBracket />
+        </span>
+        <button className='bg-yellow-400 text-black rounded-sm md:text-2xl font-semibold hover:bg-yellow-500 h-8 md:h-12 w-24 md:w-32 font-serif md:font-normal'>Resume</button>
+       </div>
 
         {/* My Skills */}
         <div className=" mt-12 lg:mt-16">
