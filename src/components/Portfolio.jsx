@@ -6,43 +6,43 @@ const projects = [
     title: 'Event Management System',
     description: 'These Project I created help of chat gpt',
     link: 'https://frontend-eight-steel-19.vercel.app/',
-    image: '/public/management.jpg',
+    image: '/management.jpg',
   },
   {
     title: 'YouTube Clone',
     description: 'Html and Css use only',
     link: 'https://youtube-clone-eight-sable.vercel.app/',
-    image: '/public/youtube.avif', // 
+    image: '/youtube.avif', // 
   },
   {
     title: 'React Cart Drag and Drop',
     description: "It's just cart drag and drop",
     link: 'https://react-cart-drag-up-down.vercel.app/',
-    image: '/public/drag.webp', 
+    image: '/drag.webp', 
   },
   {
     title: 'Gmail Clone',
     description: 'Html and Css use only',
     link: 'https://example.com/gmail-clone',
-    image: '/public/gmail.webp', 
+    image: '/gmail.webp', 
   },
   {
     title: 'Weather Check App',
     description: 'You can check weather condition',
     link: 'https://react-weather-app-silk-five.vercel.app/',
-    image: '/public/weather.png', // Replace with your image URL
+    image: '/weather.png', // Replace with your image URL
   },
   {
     title: 'Landing Page',
     description: 'It only for design practice purpuse',
     link: 'https://cuberto-ws-landing-page.vercel.app/',
-    image: '/public/landing.png', // Replace with your image URL
+    image: '/landing.png', // Replace with your image URL
   },
   {
     title: 'Landing Page2',
     description: 'It only for design practice purpuse',
     link: 'https://modern-web-app-landing-page-design.vercel.app/',
-    image: '/public/landing2.webp', // Replace with your image URL
+    image: '/landing2.webp', // Replace with your image URL
   },
 ];
 

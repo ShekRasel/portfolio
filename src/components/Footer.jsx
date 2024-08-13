@@ -46,7 +46,7 @@ function Footer() {
       <div className="flex flex-col md:flex-row  items-center text-center md:text-left justify-center md:pb-10">
         <p className="mb-4 md:mb-0">Thanks for scrolling!</p>
       </div>
-      <p className="text-lg  font-semibold text-gray-400 text-center md:text-right pr-6">&copy; 2024 CopyRight:Shek Rasel</p>
+      <p className="text-lg  font-semibold text-gray-400 text-center md:text-right pr-6">&copy; 2024 CopyRight : Shek Rasel</p>
     </div>
   );
 }

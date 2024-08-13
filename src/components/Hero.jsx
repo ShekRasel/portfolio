@@ -2,7 +2,7 @@ import React from 'react';
 
 function Hero() {
   return (
-    <div className="bg-neutral-900 text-white flex justify-center lg:h-screen px-4 py-8" id='home'>
+    <div className="bg-neutral-900 text-white flex justify-center lg:h-screen  px-4 py-8 " id='home'>
       <div className="flex flex-row items-center gap-3 md:gap-16 lg:gap-24 ">
         {/* Left Section */}
         <div className="flex flex-col items-start mb-8 md:mb-0">
