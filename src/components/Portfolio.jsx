@@ -6,25 +6,25 @@ const projects = [
     title: 'Event Management System',
     description: 'These Project I created help of chat gpt',
     link: 'https://frontend-eight-steel-19.vercel.app/',
-    image: '/management.jpg',
+    image: '/management.png',
   },
   {
     title: 'YouTube Clone',
     description: 'Html and Css use only',
     link: 'https://youtube-clone-eight-sable.vercel.app/',
-    image: '/youtube.avif', // 
+    image: '/youtube.png', // 
   },
   {
     title: 'React Cart Drag and Drop',
     description: "It's just cart drag and drop",
     link: 'https://react-cart-drag-up-down.vercel.app/',
-    image: '/drag.webp', 
+    image: '/drag.png', 
   },
   {
     title: 'Gmail Clone',
     description: 'Html and Css use only',
-    link: 'https://example.com/gmail-clone',
-    image: '/gmail.webp', 
+    link: 'https://gmail-clone-fawn-alpha.vercel.app/',
+    image: '/gmail.png', 
   },
   {
     title: 'Weather Check App',
@@ -42,13 +42,13 @@ const projects = [
     title: 'Landing Page2',
     description: 'It only for design practice purpuse',
     link: 'https://modern-web-app-landing-page-design.vercel.app/',
-    image: '/landing2.webp', // Replace with your image URL
+    image: '/landing2.png', // Replace with your image URL
   },
 ];
 
 function Portfolio() {
   return (
-    <div id="portfolio" className="min-h-screen bg-neutral-900 p-4 md:p-8 overflow-hidden ">
+    <div id="portfolio" className="h-auto  bg-neutral-900 p-4 md:p-8 overflow-hidden ">
       <h1 className="text-3xl md:text-4xl lg:text-4xl font-serif font-bold text-center mb-8 mt-12 text-white">
         ...Portfolio...
       </h1>

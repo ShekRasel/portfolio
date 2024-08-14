@@ -33,14 +33,19 @@ function Skills() {
   };
 
   return (
-    <div
+    <div className="h-auto bg-neutral-900 ">
+      <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center  font-serif bg-neutral-900 pt-12">
+            My Skills
+          </h2>
+      <div
       ref={ref}
-      className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 lg:px-44 lg:py-10"
+      className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-16 py-10 lg:px-48 lg:py-10 h-auto bg-neutral-900"
     >
+      
       {skills.map((skill, index) => (
         <motion.div
           key={index}
-          className="bg-black text-white p-6 lg:p-4 rounded-lg shadow-lg flex flex-col items-center justify-center"
+          className="bg-black text-white p-6 lg:p-10 rounded-lg shadow-lg flex flex-col items-center justify-center"
           initial={index < skills.length / 2 ? "hiddenLeft" : "hiddenRight"}
           animate={isInView ? "visible" : index < skills.length / 2 ? "hiddenLeft" : "hiddenRight"}
           whileHover="hover"
@@ -59,6 +64,7 @@ function Skills() {
           </h3>
         </motion.div>
       ))}
+      </div>
     </div>
   );
 }

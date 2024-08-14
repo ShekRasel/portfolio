@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from "react";
-import Skills from "./Skills";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 import { motion, useAnimation, useInView } from "framer-motion";
 
@@ -24,7 +23,7 @@ function About() {
   return (
     <div
       id="about"
-      className="bg-neutral-900 text-slate-300 md:py-7 h-auto lg:h-screen px-8 md:px-16 lg:px-12 xl:px-32"
+      className="bg-neutral-900 text-slate-300 md:py-7 h-auto  px-8 md:px-16 lg:px-12 xl:px-32"
     >
       <div className="lg:px- mx-auto">
         {/* Header */}
@@ -35,8 +34,8 @@ function About() {
         {/* Description */}
         <p className="text-sm font-semibold sm:text-sm md:text-xl md:italic leading-relaxed text-justify lg:px-6 lg:font-sans">
           Hi, I'm Shek Rasel, a dedicated web developer with a passion for
-          crafting dynamic and user-centric websites. I specialize in both
-          frontend and backend technologies, leveraging modern frameworks to
+          crafting dynamic and user-centric websites. I specialize in 
+          frontend  technologies, leveraging modern frameworks to
           build seamless digital experiences. With a keen eye for detail and a
           commitment to quality, I strive to create innovative solutions that
           exceed expectations. My experience includes working on diverse
@@ -63,18 +62,15 @@ function About() {
             <h1 className="font-semibold text-white font-serif">My Resume</h1>
             <FaArrowRightFromBracket />
           </span>
-          <button className="bg-yellow-400 text-black rounded-sm md:text-2xl font-semibold hover:bg-yellow-500 h-8 md:h-12 w-24 md:w-32 font-serif md:font-normal">
+          <a 
+            href="/public/My CV.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="bg-yellow-400 text-black rounded-sm md:text-2xl font-semibold hover:bg-yellow-500 h-8 md:h-12 w-24 md:w-32 font-serif md:font-normal flex items-center justify-center"
+          >
             Resume
-          </button>
+          </a>
         </motion.div>
-
-        {/* My Skills */}
-        <div className="mt-12 lg:mt-16">
-          <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center mb-2 mt-4 font-serif">
-            My Skills
-          </h2>
-          <Skills />
-        </div>
       </div>
     </div>
   );

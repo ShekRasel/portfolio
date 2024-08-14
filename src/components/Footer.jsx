@@ -33,9 +33,12 @@ function Footer() {
           <p className="mb-6 text-justify text-sm md:text-base">
             I am a passionate web developer specializing in building responsive and user-friendly websites. My expertise includes modern JavaScript frameworks and libraries, and I strive to create engaging user experiences. Let's build something amazing together!
           </p>
+          <a href="#contact">
+
           <button className="bg-yellow-500 hover:bg-yellow-600 text-black py-2 px-8 font-semibold rounded">
             Reach Me
           </button>
+          </a>
         </div>
       </div>
 

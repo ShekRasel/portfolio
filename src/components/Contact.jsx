@@ -2,8 +2,8 @@ import React from 'react';
 
 function Contact() {
   return (
-    <div className="bg-neutral-900 min-h-screen flex items-center justify-center py-12" id="contact">
-      <div className="bg-neutral-800 rounded-lg shadow-lg p-4 md:p-10 lg:py-8 lg:px-20 md:px-10 max-w-[300px] lg:max-w-[1050px] md:max-w-[680px] w-full mx-4">
+    <div className="bg-neutral-900  md:h-auto flex items-center justify-center py-20 " id="contact">
+      <div className="bg-neutral-800 rounded-lg shadow-lg p-4  lg:py-8 lg:px-20 md:px-10 max-w-[300px] lg:max-w-[1050px] md:max-w-[680px] w-full mx-4">
         <h2 className="text-2xl md:text-3xl font-bold text-center text-white mb-4 md:mb-6 font-serif">
           Contact Me
         </h2>
